@@ -1,5 +1,6 @@
 import React from "react";
 import WeCreateImage from "../assets/img/weCreate.jpg";
+import ChecklistIcon from "../assets/icons/checklist.svg";
 
 const WeCreateYourHomeSection: React.FC = () => {
   return (
@@ -23,20 +24,34 @@ const WeCreateYourHomeSection: React.FC = () => {
             Furnitre power is a software as services for multiperpose business
             management system,
           </p>
-          <ul className="list-disc list-inside space-y-2">
-            <li>
-              <h3>Valuation Services</h3>
-              <p>
-                Sometimes features require a short description. This can be
-                detailed description
-              </p>
+          <ul className="space-y-4">
+            <li className="flex items-start gap-4">
+              <img
+                src={ChecklistIcon}
+                alt="Checklist Icon"
+                className="w-6 h-6 mt-1"
+              />
+              <div>
+                <h3 className="font-bold">Valuation Services</h3>
+                <p className="text-gray-600">
+                  Sometimes features require a short description. This can be a
+                  detailed description.
+                </p>
+              </div>
             </li>
-            <li>
-              <h3>Development of Furniture Modelss</h3>
-              <p>
-                Sometimes features require a short description. This can be
-                detailed description
-              </p>
+            <li className="flex items-start gap-4">
+              <img
+                src={ChecklistIcon}
+                alt="Checklist Icon"
+                className="w-6 h-6 mt-1"
+              />
+              <div>
+                <h3 className="font-bold">Development of Furniture Models</h3>
+                <p>
+                  Sometimes features require a short description. This can be a
+                  detailed description.
+                </p>
+              </div>
             </li>
           </ul>
         </div>

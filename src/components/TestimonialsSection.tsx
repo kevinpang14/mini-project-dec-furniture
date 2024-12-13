@@ -48,7 +48,7 @@ const TestimonialsSection: React.FC = () => {
     <section className="bg-white py-12 px-6">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8 items-center">
         {/* Left Section */}
-        <div className="lg:w-1/2">
+        <div className="w-10/12  lg:w-1/2">
           <h2 className="text-3xl font-bold mb-6">Testimonials</h2>
 
           {testimonials.map((testimonial) => (

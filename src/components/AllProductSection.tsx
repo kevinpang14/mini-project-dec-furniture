@@ -65,14 +65,11 @@ const AllProductSection: React.FC = () => {
         {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product) => (
-            <div
-              key={product.id}
-              className="border rounded-lg shadow-md overflow-hidden text-left"
-            >
+            <div key={product.id} className="overflow-hidden text-left">
               <img
                 src={product.image}
                 alt={product.title}
-                className="h-40 w-full object-cover rounded-xl"
+                className="h-72 w-full object-cover border rounded-lg shadow-sm "
               />
               <div className="p-4">
                 <h3 className="font-semibold text-lg mb-2">{product.title}</h3>

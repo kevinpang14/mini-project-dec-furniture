@@ -8,12 +8,12 @@ const App: React.FC = () => {
   return (
     <>
       <Router>
-        <div className="flex flex-col min-h-screen">
+        <div>
           {/* Navbar */}
           <Navbar />
 
           {/* Main Content */}
-          <main className="flex-grow">
+          <main>
             <Routes>
               <Route path="/" element={<Homepage />} />
             </Routes>

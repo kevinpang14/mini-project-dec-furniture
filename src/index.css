@@ -1,0 +1,38 @@
+/* Add custom font-face declarations before Tailwind imports */
+@font-face {
+  font-family: "Saira";
+  src: url("assets/fonts/Saira-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url("assets/fonts/Saira-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url("assets/fonts/Saira-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* div,
+  h1,
+  ul,
+  img {
+    @apply border border-black border-opacity-30;
+  } */
+  body {
+    /* apply font open sans */
+    @apply font-main;
+  }
+}

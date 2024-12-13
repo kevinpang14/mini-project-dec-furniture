@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed w-full flex justify-between items-center py-4 md:py-6 px-10 z-50 transition-all duration-1000 ${
+      className={`fixed w-full flex justify-between items-center py-4 md:py-6 px-10 z-50 transition-all duration-300 ${
         isScrolled ? "bg-primary-default shadow-lg" : "bg-transparent"
       }`}
     >
@@ -51,33 +51,50 @@ const Navbar: React.FC = () => {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/our-works">About</a>
+          <a href="/">About</a>
         </li>
         <li>
-          <a href="/about-us">Features</a>
+          <a href="/">Features</a>
         </li>
         <li>
-          <a href="/contact-us">Contact</a>
+          <a href="/">Contact</a>
         </li>
       </ul>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 right-16 bg-white text-black text-center w-48 shadow-lg p-4 ">
-          <ul className="space-y-2">
+        <div className="fixed inset-0 bg-white text-primary-default flex flex-col items-center justify-center z-50">
+          <div className="text-2xl text-center mb-8 font-semiBold">
+            FurniShop
+          </div>
+          <ul className="text-xl text-center space-y-6">
             <li>
-              <a href="/">Home</a>
+              <a href="/" onClick={toggleMenu}>
+                Home
+              </a>
             </li>
             <li>
-              <a href="/">About</a>
+              <a href="/" onClick={toggleMenu}>
+                About
+              </a>
             </li>
             <li>
-              <a href="/">Features</a>
+              <a href="/" onClick={toggleMenu}>
+                Features
+              </a>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <a href="/" onClick={toggleMenu}>
+                Contact
+              </a>
             </li>
           </ul>
+          <button
+            className="absolute bottom-8 bg-white text-primary-default font-bold py-2 px-4 text-2xl"
+            onClick={toggleMenu}
+          >
+            X
+          </button>
         </div>
       )}
     </nav>

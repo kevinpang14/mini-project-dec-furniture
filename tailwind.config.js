@@ -7,7 +7,7 @@ export default {
         primary: {
           default: "#23262F", // Primary Black
         },
-        secondary: "#286F6C",
+        secondary: "#286F6C", // Secondary Green
       },
       fontFamily: {
         main: ["Saira", "sans-serif"], // Main font
